@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Finanzas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <img src="finanzas-imagen.png" alt="imagen de finanzas" id="imagen1">
+        <h1>🧾 Registro de Finanzas Personales</h1>
+
+        <div class="ingresos">
+            <h2>💰 Ingreso Mensual</h2>
+            <input type="number" id="ingresoMensual" placeholder="Ingrese su ingreso mensual">
+            <button onclick="guardarIngreso()" class="btn">Guardar ingreso</button>
+        </div>
+
+        <div class="gastos">
+            <h2>📆 Registrar Gasto</h2>
+
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" placeholder="Ej: 2000">
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+                <option value="comida">🍔 Comida</option>
+                <option value="transporte">🚌 Transporte</option>
+                <option value="ocio">🎮 Ocio</option>
+                <option value="otros">📦 Otros</option>
+            </select>
+
+            <label for="descripcion">Descripción (opcional):</label>
+            <input type="text" id="descripcion" placeholder="Ej: Almuerzo, colectivo, cine...">
+
+            <button onclick="agregarGasto()" class="btn">Agregar Gasto</button>
+        </div>
+
+        <div class="acciones">
+            <button onclick="verResumen()" class="btn">Ver Resumen</button>
+            <button onclick="limpiarDatos()" class="btn">Limpiar Todo</button>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="codigo.js"></script>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OMdkUageUls" title="YouTube video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+
+</html>
